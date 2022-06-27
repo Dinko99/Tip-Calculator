@@ -11,6 +11,7 @@ body{
     display: grid;
     place-items: center;
     background-color: rgb(238, 143, 155);
+    overflow: hidden;
 }
 
 .title{
@@ -59,6 +60,10 @@ label{
     text-transform: capitalize;
 }
 
+.number-of-people{
+    margin-top: 10px;
+}
+
 .select-tip > p{
     text-transform: capitalize;
 }
@@ -84,6 +89,11 @@ cursor: pointer;
     color: #fff;
     border: none; 
     transition: .1s all linear;
+}
+
+.btn:focus, .custom:focus{
+    background-color: red;
+    color: #fff;
 }
 
 .btn:hover{
@@ -143,4 +153,11 @@ h3{
 .reset:hover{
     background-color: rgb(238, 153, 153); 
     color: #fff;   
+}
+
+@media screen and (max-width: 700px) {
+    .calculator{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 }

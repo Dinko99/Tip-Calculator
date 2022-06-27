@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -17,7 +16,11 @@
         <div class="left-side">
             <div class="bill">
                 <label>bill</label>
-                <input type="number" min="0" placeholder="$">
+                <input type="number" min="0" placeholder="$" id="bill">
+            </div>
+            <div class="number-of-people">
+                <label>number of people</label>
+                <input type="number" min="1" placeholder="$" id="people">
             </div>
             <div class="select-tip">
                 <p>select tip %</p>
@@ -27,12 +30,8 @@
                     <button class="btn">15%</button>
                     <button class="btn">25%</button>
                     <button class="btn">50%</button>
-                    <input type="number" class="custom" placeholder="$" min="0">
+                    <input type="number" class="custom" min="0" id="custom" maxlength="4">
                 </div>
-            </div>
-            <div class="number-of-people">
-                <label>number of people</label>
-                <input type="number" min="1" placeholder="$">
             </div>
         </div>
         <div class="right-side">
@@ -42,19 +41,20 @@
                         <h3>Tip Amount</h3>
                         <p>/ person</p>
                     </div>
-                    <h1 class="amount">$0.00</h1>
+                    <h1 class="amount" id="personTip">$0.00</h1>
                 </div>
                 <div class="total-amount box">
                     <div class="total-person">
                         <h3>Total</h3>
                         <p>/ person</p>
                     </div>
-                    <h1 class="amount">$0.00</h1>
+                    <h1 class="amount" id="personTotal">$0.00</h1>
                 </div>
             </div>
-            <button class="reset">RESET</button>
+            <button class="reset" id="reset">RESET</button>
         </div>
     </section>
     
+    <script src="script.js"></script>
 </body>
 </html>
