@@ -36,14 +36,15 @@ reset.addEventListener('click', ()=>{
 
 btns.forEach(btn =>{
     btn.addEventListener('click', (e)=>{
-        tipPercentage = parseInt(e.target.textContent)/100
+        let value = parseFloat(e.target.textContent)
+        tipPercentage = value/100
         getResult()
         custom.value = ''
     })
 })
 
 function getResult(){
-    tipValue = parseFloat(((tipPercentage/billValue) * 100)/peopleNumber).toFixed(2)
+    tipValue = parseFloat((tipPercentage*billValue)/peopleNumber).toFixed(2)
     tip.innerText = `$${tipValue}`
     totalValue = billValue/peopleNumber + parseFloat(tipValue)
     total.innerText = `$${totalValue.toFixed(2)}`
