@@ -1,3 +1,3 @@
 # Tip-Calculator
-Tip Calculator made in javascript
-Frontend mentor challenge
+Tip Calculator made in javascript  
+Challenge from Frontend Mentor
