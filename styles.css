@@ -1,0 +1,146 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 1.2;
+    font-size: 1rem;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    background-color: rgb(238, 143, 155);
+}
+
+.title{
+    font-size: 1.4em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: rgb(255, 255, 255);
+}
+
+.title > p:first-child {
+    margin-bottom: -25px;
+}
+
+.calculator{
+    margin-bottom: 6em;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 15px;
+    gap: 20px;
+    border-radius: 15px;
+}
+
+.left-side{
+    display: grid;
+}
+
+input:not(.custom){
+    width: 100%;
+    padding: 4px;
+    color: indianred;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-align: right;
+    border: 2px indianred solid;
+    display: flex;
+    margin-top: 10px;
+}
+
+input::placeholder{
+    text-align: left;
+    color: indianred;
+}
+
+label{
+    text-transform: capitalize;
+}
+
+.select-tip > p{
+    text-transform: capitalize;
+}
+
+.buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.btn, .custom{
+width: 5em;
+padding: 5px;
+border-radius: 4px;
+font-weight: bold;
+font-size: 1.1em;
+cursor: pointer;
+}
+
+.btn{
+    background-color: indianred;
+    color: #fff;
+    border: none; 
+    transition: .1s all linear;
+}
+
+.btn:hover{
+    opacity: .9;
+}
+
+.custom{
+    border: 1px solid gray;
+    padding: 4px;
+    color: indianred;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-align: right;
+}
+
+.right-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: indianred;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.result{
+    display: flex;
+    flex-direction: column;
+}
+
+.box{
+    display: flex;
+    justify-content: space-between;
+}
+
+h3{
+    font-size: 13px;
+}
+
+.right-side p{
+    font-size: 10px;
+}
+
+.reset{
+    padding: 8px;
+    border-radius: 4px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    color: indianred;
+    font-weight: bold;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: .1s all linear;
+}
+
+.reset:hover{
+    background-color: rgb(238, 153, 153); 
+    color: #fff;   
+}
